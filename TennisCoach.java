@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
 
 	@Autowired
+	//This will choose HappyFortuneService instead of the other classes that implements FortuneService.
 	@Qualifier("happyFortuneService")//bean id to inject happyfortuneService
 	private FortuneService FortuneService;
 	
